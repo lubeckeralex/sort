@@ -1,6 +1,8 @@
 #include<iostream>
 using namespace std;
+
 //http://www.algolist.net/Algorithms/Sorting/Quicksort
+//java - https://www.youtube.com/watch?v=PrxjH8R-kE8
 
 void quickSort(int arr[], int left, int right);
 
