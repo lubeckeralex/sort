@@ -1,9 +1,8 @@
 #include<iostream>
 using namespace std;
-
+//http://www.algolist.net/Algorithms/Sorting/Quicksort
 
 void quickSort(int arr[], int left, int right);
-
 
 int main()
 {
@@ -15,8 +14,6 @@ int main()
 	{
 		cout << arr[i] << endl;
 	}
-
-
 
 }
 
