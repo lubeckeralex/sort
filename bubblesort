@@ -1,0 +1,47 @@
+#include<iostream>
+using namespace std;
+
+
+void bSort(int *arr, int n)
+{
+	for(; n > 1; n--)
+	{
+		for(int i = 0; i < n-1; i++)
+		{
+			if(arr[i]>arr[i+1])
+			{
+				int tmp;
+				tmp = arr[i];
+				arr[i] = arr[i+1];
+				arr[i+1]=tmp;
+			}
+		}
+	}
+
+}
+
+
+
+int main()
+{
+	int arr[100];
+	int x = 0;
+	int i = 0;
+	cout << "Geben Sie Zahl ein (nach dem 0 Starten wier rechnung!) MAXIMUM 100 Zaehelen!." << endl;
+	do
+	{
+		cin >> x;
+		arr[i]=x;
+		i++;
+	}
+	while(x!=0);
+
+	bSort(arr, i);
+
+	for(int j = 0; j < i; j++)
+	{
+		cout << arr[j] << endl;
+	}
+
+
+}
